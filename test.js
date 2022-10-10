@@ -4,30 +4,49 @@
 //   console.log(i, scores[i]);
 // }
 
-const students = [
-  {
-    firstName: "Zeus",
-    score: 86,
-  },
-  {
-    firstName: "Artemis",
-    score: 95,
-  },
-  {
-    firstName: "Hera",
-    score: 72,
-  },
-  {
-    firstName: "Apollo",
-    score: 90,
-  },
-];
+// const students = [
+//   {
+//     firstName: "Zeus",
+//     score: 86,
+//   },
+//   {
+//     firstName: "Artemis",
+//     score: 95,
+//   },
+//   {
+//     firstName: "Hera",
+//     score: 72,
+//   },
+//   {
+//     firstName: "Apollo",
+//     score: 90,
+//   },
+// ];
 
-for (let i = 0; i < students.length; i++) {
-  //   console.log(`${students[i].firstName} has a score of ${students[i].score}`);
-  if (students[i].score < 90) {
-    console.log(`${students[i].firstName} needs to retake the test`);
+// for (let i = 0; i < students.length; i++) {
+//   //   console.log(`${students[i].firstName} has a score of ${students[i].score}`);
+//   if (students[i].score < 90) {
+//     console.log(`${students[i].firstName} needs to retake the test`);
+//   } else {
+//     console.log(`${students[i].firstName} passed!`);
+//   }
+// }
+
+//dice roll
+
+let guess = Math.floor(Math.random() * 6);
+let number = Math.floor(Math.random() * 6);
+
+const rollDice = () => {
+  console.log(`The computer rolled ${number} and you guessed ${guess}`);
+
+  if (number === guess) {
+    console.log("you win!");
   } else {
-    console.log(`${students[i].firstName} passed!`);
+    console.log("guess again!");
+    guess = Math.floor(Math.random() * 6);
+    rollDice();
   }
-}
+};
+
+rollDice();
