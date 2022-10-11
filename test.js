@@ -60,16 +60,29 @@
 
 //Password Validator
 
-function isValidPassword(password, username) {
-  if (
-    password.length >= 8 &&
-    !password.includes(" ") &&
-    password.indexOf(username) == -1
-  ) {
-    return true;
-  } else {
-    return false;
-  }
-}
+// function isValidPassword(password, username) {
+//   if (
+//     password.length >= 8 &&
+//     !password.includes(" ") &&
+//     password.indexOf(username) == -1
+//   ) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
 
-console.log(isValidPassword("675password", "username194934"));
+// console.log(isValidPassword("675password", "username194934"));
+
+//Average array of numbers
+
+const avgArray = (numArray) => {
+  let avg = 0;
+  for (let num of numArray) {
+    avg += num;
+  }
+  avg = avg / numArray.length;
+  console.log(avg);
+};
+
+avgArray([0, 2, 5, 6]);
