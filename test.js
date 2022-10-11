@@ -128,3 +128,17 @@
 // }
 
 // isPangram("Nymphs blit quick ve dwarf jo");
+
+const suits = ["spades", "hearts", "clubs", "diamonds"];
+const cardVal = [2, 3, 4, 5, 6, 7, 8, 9, 10, "J", "K", "Q", "A"];
+const card = {};
+
+const randomCard = () => {
+  const randomSuit = suits[Math.floor(Math.random() * suits.length)];
+  const randomCardVal = cardVal[Math.floor(Math.random() * cardVal.length)];
+  card.suit = randomSuit;
+  card.value = randomCardVal;
+  console.log(card);
+};
+
+randomCard();
