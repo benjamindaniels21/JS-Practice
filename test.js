@@ -34,19 +34,38 @@
 
 //dice roll
 
-let guess = Math.floor(Math.random() * 6);
-let number = Math.floor(Math.random() * 6);
+// let guess = Math.floor(Math.random() * 6);
+// let number = Math.floor(Math.random() * 6);
 
-const rollDice = () => {
-  console.log(`The computer rolled ${number} and you guessed ${guess}`);
+// const rollDice = () => {
+//   console.log(`The computer rolled ${number} and you guessed ${guess}`);
 
-  if (number === guess) {
-    console.log("you win!");
+//   if (number === guess) {
+//     console.log("you win!");
+//   } else {
+//     console.log("guess again!");
+//     guess = Math.floor(Math.random() * 6);
+//     rollDice();
+//   }
+// };
+
+// rollDice();
+
+//Greeting
+// const greeting = (name) => {
+//   console.log(`Hello, ${name}.`);
+// };
+
+// greeting("Benny Boy");
+
+//Password Validator
+
+function isValidPassword(password, username) {
+  if (password.length >= 8 && password != username && !password.includes(" ")) {
+    return true;
   } else {
-    console.log("guess again!");
-    guess = Math.floor(Math.random() * 6);
-    rollDice();
+    return false;
   }
-};
+}
 
-rollDice();
+console.log(isValidPassword("675password", "ben"));
