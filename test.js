@@ -61,11 +61,15 @@
 //Password Validator
 
 function isValidPassword(password, username) {
-  if (password.length >= 8 && password != username && !password.includes(" ")) {
+  if (
+    password.length >= 8 &&
+    !password.includes(" ") &&
+    password.indexOf(username) == -1
+  ) {
     return true;
   } else {
     return false;
   }
 }
 
-console.log(isValidPassword("675password", "ben"));
+console.log(isValidPassword("675password", "username194934"));
