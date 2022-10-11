@@ -76,13 +76,55 @@
 
 //Average array of numbers
 
-const avgArray = (numArray) => {
-  let avg = 0;
-  for (let num of numArray) {
-    avg += num;
-  }
-  avg = avg / numArray.length;
-  console.log(avg);
-};
+// const avgArray = (numArray) => {
+//   let avg = 0;
+//   for (let num of numArray) {
+//     avg += num;
+//   }
+//   avg = avg / numArray.length;
+//   console.log(avg);
+// };
 
-avgArray([0, 2, 5, 6]);
+// avgArray([0, 2, 5, 6]);
+
+//Pangram checker (sentence that contains every letter in the alphabet)
+
+// function isPangram(sentence) {
+//   sentence = sentence.toLowerCase();
+//   if (
+//     sentence.includes(
+//       "a" &&
+//         "b" &&
+//         "c" &&
+//         "d" &&
+//         "e" &&
+//         "f" &&
+//         "g" &&
+//         "h" &&
+//         "i" &&
+//         "j" &&
+//         "k" &&
+//         "l" &&
+//         "m" &&
+//         "n" &&
+//         "o" &&
+//         "p" &&
+//         "q" &&
+//         "r" &&
+//         "s" &&
+//         "t" &&
+//         "u" &&
+//         "v" &&
+//         "w" &&
+//         "x" &&
+//         "y" &&
+//         "z"
+//     )
+//   ) {
+//     console.log(true);
+//   } else {
+//     console.log(false);
+//   }
+// }
+
+// isPangram("Nymphs blit quick ve dwarf jo");
