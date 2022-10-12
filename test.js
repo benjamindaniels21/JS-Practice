@@ -147,12 +147,24 @@
 
 //Check if value is between 2 numbers
 
-function makeBetweenFunc(x, y) {
-  return function (num) {
-    return num >= x && num <= y;
-  };
-}
+// function makeBetweenFunc(x, y) {
+//   return function (num) {
+//     return num >= x && num <= y;
+//   };
+// }
 
-const isChild = makeBetweenFunc(0, 18);
+// const isChild = makeBetweenFunc(0, 18);
 
-console.log(isChild(19));
+// const isInNineties = makeBetweenFunc(1990, 1999);
+
+// const isNiceWeather = makeBetweenFunc(60, 79);
+
+// console.log(isChild(19));
+
+const grumpy = function () {
+  alert("Get off my lawn!");
+};
+
+const btn = document.querySelector("button");
+
+btn.addEventListener("click", grumpy);
