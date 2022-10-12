@@ -144,3 +144,15 @@
 // };
 
 // randomCard();
+
+//Check if value is between 2 numbers
+
+function makeBetweenFunc(x, y) {
+  return function (num) {
+    return num >= x && num <= y;
+  };
+}
+
+const isChild = makeBetweenFunc(0, 18);
+
+console.log(isChild(19));
