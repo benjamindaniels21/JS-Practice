@@ -161,10 +161,35 @@
 
 // console.log(isChild(19));
 
-const grumpy = function () {
-  alert("Get off my lawn!");
-};
+// const grumpy = function () {
+//   alert("Get off my lawn!");
+// };
 
-const btn = document.querySelector("button");
+// const btn = document.querySelector("button");
 
-btn.addEventListener("click", grumpy);
+// btn.addEventListener("click", grumpy);
+
+//----Array.map() challenges----
+
+//----Array Squared...return the squared value of each number---
+
+// const input = [1, 2, 3, 4, 5];
+
+// const squared = input.map((num) => num * num);
+
+// console.log(squared);
+
+//---Sum of all positive array numbers---
+
+const input = [1, -4, 12, 0, -3, 29, -150];
+let sum = 0;
+
+const sumPos = input.map((num) => {
+  if (num > 0) {
+    sum += num;
+  } else {
+    return;
+  }
+});
+
+console.log(sum);
