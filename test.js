@@ -181,15 +181,33 @@
 
 //---Sum of all positive array numbers---
 
-const input = [1, -4, 12, 0, -3, 29, -150];
-let sum = 0;
+// const input = [1, -4, 12, 0, -3, 29, -150];
+// let sum = 0;
 
-const sumPos = input.map((num) => {
-  if (num > 0) {
-    sum += num;
-  } else {
-    return;
-  }
-});
+// const sumPos = input.map((num) => {
+//   if (num > 0) {
+//     sum += num;
+//   } else {
+//     return;
+//   }
+// });
 
-console.log(sum);
+// console.log(sum);
+
+// const numberArray = [40, 1, 5, 200];
+
+// function compareNumbers(a, b) {
+//   return a - b;
+// }
+
+// console.log(compareNumbers("400", "10"));
+
+//----Reduce---
+
+//---find product of all vals of an array---
+
+const nums = [3, 4, 5, 6, 7];
+
+const newNums = nums.reduce((prevVal, currentVal) => prevVal * currentVal);
+
+console.log(newNums);
